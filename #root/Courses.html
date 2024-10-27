@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section of HomePage, ensures a responsive viewport for the user and imports the necessary Bootstrap scripts -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tradegroup.uk Courses</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="layout.css">
+  <!-- custom CSS to ensure there is separation between the sections on the Courses page -->
+  <style>
+    .section{
+      margin-bottom: 100px;
+      margin-top: 100px;
+    }
+  </style>
+
+</head>
+
+<!-- Call header bar class to import custom CSS values for the header -->
+<header class="header-bar">
+  <div class="container" style="width: 100%"  >
+<!-- The header is split up into 2 rows, with the first row having two columns. One for the Logo and one for the Download Software Button-->
+      <div class="row">
+        <div class="col col-lg-6" style="position:static;">
+          <a href="HomePage.html"><img src="images/trade-grooup-logo.png" alt="Trade Group Logo"></a>
+        </div>
+        <div class="col-lg-6" style="text-align: end;">
+          Download Software
+          <button type="submit" class="btn btn-primary" style="position: static; margin-bottom: 10px;">Download</button>
+        </div>
+        </div>
+        <!-- The second row of the header is uused to store the nav tag which calls navbar class to import the custom CSS from the stylesheet -->
+        <!-- Tabindex's are added to increase accessibilty -->
+        <div class="row" style="width: 100%;">
+          <nav class="navbar">
+            <ul class="nav nav-tabs justify-content-center" style="margin-bottom: 30px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="HomePage.html" tabindex="1">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AboutUs.html" tabindex="2">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Software.html" tabindex="3">Software</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Courses.html" tabindex="4">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html" tabindex="5">Contact Us</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+  </div>
+    </header>
+
+
+<body>
+<!-- The body on the Courses page is used to give the user insight on the different services in the form of Courses
+  that are on offer. We will break this into sections and rows for ease of displaying the content.-->
+<div class="container">
+  <!-- Section 1 is for giving some background knowledge on the courses themselves, such as who takes the courses, why you should 
+    pick this business, as well as showing an ordered list of some of the Training courses available to the public -->
+  <section>
+    <div class="row">
+        <h4> Our trainers are experts in international trade and development economics who have significant experience in delivering tailored training courses in a wide range of contexts for both developed and developing countries.
+            Our courses range from 1 day up to 2 week courses, depending on what you require. We are also able to tailor training courses to explicitly suit you or your organisation’s needs.
+        </h4>
+        <!-- Ordered List -->
+        <ol><h5>At a glance, our training courses can incorporate the following:</h5>
+        <li>How to use the software</li>
+        <li>Trade in Value Added</li>
+        <li>Trade in Services</li>
+        <li>Partial Equilibrium Modelling</li>
+        <li>Gravity Modelling</li>
+        <li>Trade policy issues: regional trading agreements, export opportunity analysis, unilateral liberalization, preference erosion and deep integration.</li>
+        <li>Understanding and using trade data, including explanations of data classification scheme and sources. Information on the downloading of data and use of your own national data.</li>
+    </ol>
+    </div>
+  </section>
+
+
+  <section>
+<!-- Section 2 is used to display a 2x2 Grid which shows some images of the Courses and
+  Uni courses that are on offer. -->
+    <div class="container">
+      <!-- Row 1-->
+        <div class="row">
+          <!-- Col 1-->
+          <div class="col">
+            <img src="images/Training-Course_what-we-offer_1-500x500.jpg" alt="Training Course 1"/>
+          </div>
+          <!-- Col 2 -->
+          <div class="col">
+            <img src="images/Training-Course_what-we-offer_2-500x500.jpg" alt="Training Course 2"/>
+          </div>
+        </div>
+        <!-- Row 2-->
+        <div class="row">
+          <div class="col">
+            <img src="images/Uni-courses_3-500x500.jpg" alt="Uni Course 1"/>
+          </div>
+          <div class="col">
+            <img src="images/Uni-courses_4-500x500.jpg" alt="Uni Course 2"/>
+          </div>
+        </div>
+      </div>
+  </section>
+    <section>
+      <!-- Section 3 is a brief section of text to tell the user how to get in touch or enrol for any of the courses -->
+    <div class="row" style="padding-bottom: 40px;">
+        <p>We also run courses at the University of Sussex. If you are interested in attending one of our courses, please look out for details of our next training course announcement on the News page on this website, Facebook, Twitter or email (if you have contacted us before).</p>
+        <p>If you would like to be added to the distribution list for all training course announcements or to find out more information, please don’t hesitate to send us an email.</p>
+        
+    </div>
+  </section>
+
+</div>
+
+<!-- The footer calls the footer class from the layout.css file. This ensures alll required measurements are adherred to.
+  The footer is broken into 2 different columns. First one being for Copyright and Social Media Links, with the second column
+  containing an easy to use Newsletter sign up for the user -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row" style="width: 100%;">
+      <div class="col-lg-6" style="text-align: left;">
+          <p>Trade Group&copy;  All rights reserved.<p>               
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+      </div>
+      <div class="col-lg-6" style="text-align: right; align-items: end;">
+      <h6> Sign up to our Newsletter below:  </h6>
+      <form class="form-inline" action="/action_page.php" style="margin-left: 100px">
+        <label for="email" >Email address:  </label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

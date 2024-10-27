@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section of HomePage, ensures a responsive viewport for the user and imports the necessary Bootstrap scripts -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tradegroup.uk About Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="layout.css">
+  <script>
+    // event listener
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      // Get form input values
+      var email = document.getElementById('email').value;
+      if (email.value == ""){
+        event.preventDefault();
+      }
+    })
+    
+
+   </script>
+   <script>
+    function validateForm() {
+  
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get input values for the form fields
+      var fname = document.getElementById('fname').value;
+      var sname = document.getElementById('sname').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var comment = document.getElementById('comment').value;
+        // If fname is empty display an error message and prevent submission
+      if (fname == "" ){
+          emailError.textContent= "First Name is Empty";
+          event.preventDefault();
+      }
+        // If sname is empty display an error message and prevent submission
+      else if(sname == ""){
+        emailError.textContent= "Surname is Empty";
+        event.preventDefault();
+      }
+        // If email is empty display an error message and prevent submission
+      else if(email ==""){
+        emailError.textContent= "Email is Empty";
+        event.preventDefault();
+      }
+        // If phone is empty display an error message and prevent submission
+      else if(phone == ""){
+        emailError.textContent= "Phone is Empty";
+        event.preventDefault();
+      }
+         // If comment is empty display an error message and prevent submission
+      else if(comment ==""){
+        emailError.textContent= "Comment is Empty";
+        event.preventDefault();
+      }
+      else{
+        // If none of these then submit the form and reset it to blank
+        emailError.textContent="";
+        alert('Form submitted successfully!');
+        document.getElementById('contactForm').reset();
+      }
+    })
+    }
+
+
+  </script>
+  <style>
+        .carousel-item img { /* Adjust the height of the images within the carousel */
+      object-fit: contain;
+      max-height: 600px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+
+<!-- Call header bar class to import custom CSS values for the header -->
+<header class="header-bar">
+  <div class="container" style="width: 100%"  >
+<!-- The header is split up into 2 rows, with the first row having two columns. One for the Logo and one for the Download Software Button-->
+      <div class="row">
+        <div class="col col-lg-6" style="position:static;">
+          <a href="HomePage.html"><img src="images/trade-grooup-logo.png" alt="Trade Group Logo"></a>
+        </div>
+        <div class="col-lg-6" style="text-align: end;">
+          Download Software
+          <button type="submit" class="btn btn-primary" style="position: static; margin-bottom: 10px;">Download</button>
+        </div>
+        </div>
+        <!-- The second row of the header is uused to store the nav tag which calls navbar class to import the custom CSS from the stylesheet -->
+        <!-- Tabindex's are added to increase accessibilty -->
+        <div class="row" style="width: 100%;">
+          <nav class="navbar">
+            <ul class="nav nav-tabs justify-content-center" style="margin-bottom: 30px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="HomePage.html" tabindex="1">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AboutUs.html" tabindex="2">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Software.html" tabindex="3">Software</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Courses.html" tabindex="4">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="ContactUs.html" tabindex="5">Contact Us</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+  </div>
+    </header>
+
+
+<body>
+<!-- The body for Contact Us is broken up into a 2x2 Grid, with each corner containing a unique piece of information-->
+    <div class="container">
+      <!-- New Row-->
+        <div class="row" style="margin-bottom: 10px;">
+          <!-- Column 1-->
+          <div class="col">
+            <!-- Contact Details, displays the basic contact details for this business in a list like fashion using the Article Tag-->
+            <h4>Contact Details</h4>
+            <h6>Please don’t hesitate to get in touch with us if you have a question or general enquiry by calling or emailing.</h6>
+            <article>
+                Trade Group Ltd., Sussex Innovation Centre, University of Sussex, Brighton, BN1 9SB, United Kingdom<br/>
+                +44 (0)1273 234 99 <br/>
+                <a href="info@tradegroup.uk">info@tradegroup.uk</a> <br/>
+                support@ tradegroup.uk <br/>
+                Monday - Friday: 09.00 - 17.30 (GMT +1) <br/>
+                
+                <p>If you would like Support with the software, please visit the software page of our site where you can find FAQ’s, Demonstration videos and User Manuals. Alternatively, if you can’t find what you are looking for, please don’t hesitate to email our Technical Support.</p>
+            </article>
+          </div>
+          <div class="col">
+            <!-- Column 2 -->
+            <!-- This is used to show a Contact Form to the user, this contains 5 different fields, all of which are required before being allowed to submit -->
+            <h4>Contact Form</h4>
+            <!-- Set form id to contactForm for referencing with JavaScript-->
+            <form id="contactForm">
+                <div class="form-group">
+                  <label for="fname">First Name:</label>
+                  <input type="text" class="form-control" id="fname" name="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="sname">Surname:</label>
+                    <input type="text" class="form-control" id="sname" name="sname" required>
+                  </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="number" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment: </label>
+                    <input type="text" class="form-control" id="comment" name="phone" required>
+                </div>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Row 2-->
+          <div class="col">
+            <!-- Col 1-->
+            <h4>Map</h4>
+            <!-- iframe is used to show a real map of the University on Google Earth -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40309.29834302715!2d-0.1377275039972282!3d50.843551859950246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487588ca9b7c1b1b%3A0x7b4ba124cd6ad273!2sUniversity%20of%20Sussex!5e0!3m2!1sen!2suk!4v1685704681765!5m2!1sen!2suk" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col">
+            <!-- Col 2 -->
+            <article>
+              <!-- This article is used to list the directions to the University,
+                whether by Train, Bus or Car. These are under their own headings to ensure
+                the user can easily navigate to any information they need -->
+            <h4>Directions</h4>
+            <h6>Train</h6>
+                <p>Falmer Railway Station is immediately opposite the University entrance. You may need to change at Brighton or Lewes main stations (about 8 minutes in either direction).</p>
+            <h6>Bus</h6>
+                <p>Bus number 25 runs between the centre of Brighton and the University – stopping at Churchill Square and Old Steine – bringing passengers directly onto the campus. In addition, bus services 28, 30, 129, 728 and 729 operate between Brighton (Old Steine) and destinations east of Falmer. They all stop right outside the University.</p>
+            <h6>Car</h6>
+                <p>The University is about 4 miles (6 km) outside Brighton or Lewes on the A27. If you are using Satillite Navigation, please enter our postcode BN1 9SB.</p>
+        </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- The footer calls the footer class from the layout.css file. This ensures alll required measurements are adherred to.
+  The footer is broken into 2 different columns. First one being for Copyright and Social Media Links, with the second column
+  containing an easy to use Newsletter sign up for the user -->
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row" style="width: 100%;">
+            <div class="col-lg-6" style="text-align: left;">
+                <p>Trade Group&copy;  All rights reserved.<p>               
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <div class="col-lg-6" style="text-align: right; align-items: end;">
+            <h6> Sign up to our Newsletter below:  </h6>
+            <form class="form-inline" action="/action_page.php" style="margin-left: 100px">
+              <label for="email" >Email address:  </label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+
+        </div>
+
+  </footer>
+</body>
+</html>

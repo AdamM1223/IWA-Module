@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section of HomePage, ensures a responsive viewport for the user and imports the necessary Bootstrap scripts -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tradegroup.uk About Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="layout.css">
+  
+  <style>
+    .section{
+      margin-bottom: 100px;
+      margin-top: 100px;
+    }
+
+
+    
+  </style>
+
+</head>
+
+<!-- Call header bar class to import custom CSS values for the header -->
+<header class="header-bar">
+  <div class="container" style="width: 100%"  >
+<!-- The header is split up into 2 rows, with the first row having two columns. One for the Logo and one for the Download Software Button-->
+      <div class="row">
+        <div class="col col-lg-6" style="position:static;">
+          <a href="HomePage.html"><img src="images/trade-grooup-logo.png" alt="Trade Group Logo"></a>
+        </div>
+        <div class="col-lg-6" style="text-align: end;">
+          Download Software
+          <button type="submit" class="btn btn-primary" style="position: static; margin-bottom: 10px;">Download</button>
+        </div>
+        </div>
+        <!-- The second row of the header is uused to store the nav tag which calls navbar class to import the custom CSS from the stylesheet -->
+        <!-- Tabindex's are added to increase accessibilty -->
+        <div class="row" style="width: 100%;">
+          <nav class="navbar">
+            <ul class="nav nav-tabs justify-content-center" style="margin-bottom: 30px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="HomePage.html" tabindex="1">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="AboutUs.html" tabindex="2">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Software.html" tabindex="3">Software</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Courses.html" tabindex="4">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html" tabindex="5">Contact Us</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+  </div>
+    </header>
+
+
+<body>
+<!-- The body of About Us is broken down into 3 different sections, which can be seen within the <Section> tags in the body-->
+
+<div class="container">
+  <!-- First Section is a simple introduction into who the Company are and what they do to give the user a simple idea -->
+  <section>
+    <div class="row">
+        <h4> We are a team of international trade policy specialists based at the University of Sussex, who collectively have over 100 years of experience in trade policy analysis. We have vast experience in international trade both in academia and for governments and international organizations.</h4>
+    </div>
+  </section>
+  <!-- Second Section is a grid that is used to display 4 images of the staff currently working at Trade Group,
+    each image is set to a height and width that allows all 4 to display on the same page on large screens. 
+    Each image contains a center aligned caption under the image with the corresponding name-->
+  <section>
+    <div class="row" style="text-align: center;">
+    <div class="col-3">
+    <img src="images/staff-colin_crop-1.jpg" height="300px" width="300px" alt="Colin Crop"/> 
+    <caption>Colin</caption>
+    </div>
+    <div class="col-3">
+        <img src="images/staff-Jim_crop-1.jpg" height="300px" width="300px" alt="Jim Crop"/> 
+        <caption>Jim</caption> 
+    </div>
+    <div class="col-3">
+        <img src="images/staff-michael_crop-1.jpg" height="300px" width="300px" alt="Michael Crop"/> 
+        <caption>Michael</caption>
+    </div>
+    <div class="col-3">
+        <img src="images/staff-peter_crop-1.jpg" height="300px" width="300px" alt="Peter Crop"/> 
+        <caption>Peter</caption>
+    </div>
+
+    </div>
+  </section>
+  <!-- The last section is for more text into the background of the Company, such as what problem they are around
+    to solve, how they can solve it and a list of tasks that can be helped with their software -->
+    <section>
+    <div class="row" style="padding-bottom: 40px;"> <!-- custom padding to ensure the footer is placed below the body-->
+        <h2 style="text-align: center;">THE PROBLEM WE WANTED TO SOLVE</h2>
+        <p>We found that economists have sophisticated tools for analysing the potential impact of trade policy agreements, however they are typically expensive, require highly skilled people, work at a fairly aggregate level, and make very heroic assumptions of the underlying data. They are often unaffordable and require highly expert ‘intelligent customers’ who are often in even shorter supply of cash, particularly but not only, in developing countries.
+        </p>
+        <!-- Text is center aligned throughout this section-->
+        <h2 style="text-align: center;">OUR SOLUTION</h2>
+        <p>Was to create a conceptual framework based on flexible diagnostic trade indicators, checklists of key areas of analysis to be covered, and ‘rules of thumb’ to allow fast and consistent assessment of costs and benefits.</p>
+
+        <h3 style="text-align: center;">THE BENEFITS OF TRADESIFT</h3>
+        <p>Our software makes the process much faster, providing an easy-to-use interface that allows the analysis of freely available international trade data without the need for complicated modelling.</p>
+        <!-- Ordered List for the User-->
+        <ol>With the software you can:
+          <li>•	Analyse trade policy before and after implementation, and</li>
+          <li>•	Generate negotiating priorities and strategies based on actual trade and economic performance.</li>
+          <li>•	You can calculate the diagnostic trade indicators easily, and then</li>
+          <li>•	Quickly and accurately generate graphs, tables and reports using integrated report writer</li>
+        </ol>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- The footer calls the footer class from the layout.css file. This ensures alll required measurements are adherred to.
+  The footer is broken into 2 different columns. First one being for Copyright and Social Media Links, with the second column
+  containing an easy to use Newsletter sign up for the user -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row" style="width: 100%;">
+      <div class="col-lg-6" style="text-align: left;">
+          <p>Trade Group&copy;  All rights reserved.<p>               
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+      </div>
+      <div class="col-lg-6" style="text-align: right; align-items: end;">
+      <h6> Sign up to our Newsletter below:  </h6>
+      <form class="form-inline" action="/action_page.php" style="margin-left: 100px">
+        <label for="email" >Email address:  </label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section of HomePage, ensures a responsive viewport for the user and imports the necessary Bootstrap scripts -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tradegroup.uk Software</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="layout.css">
+
+</head>
+
+<!-- Call header bar class to import custom CSS values for the header -->
+<header class="header-bar">
+  <div class="container" style="width: 100%"  >
+<!-- The header is split up into 2 rows, with the first row having two columns. One for the Logo and one for the Download Software Button-->
+      <div class="row">
+        <div class="col col-lg-6" style="position:static;">
+          <a href="HomePage.html"><img src="images/trade-grooup-logo.png" alt="Trade Group Logo"></a>
+        </div>
+        <div class="col-lg-6" style="text-align: end;">
+          Download Software
+          <button type="submit" class="btn btn-primary" style="position: static; margin-bottom: 10px;">Download</button>
+        </div>
+        </div>
+        <!-- The second row of the header is uused to store the nav tag which calls navbar class to import the custom CSS from the stylesheet -->
+        <!-- Tabindex's are added to increase accessibilty -->
+        <div class="row" style="width: 100%;">
+          <nav class="navbar">
+            <ul class="nav nav-tabs justify-content-center" style="margin-bottom: 30px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="HomePage.html" tabindex="1">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AboutUs.html" tabindex="2">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Software.html" tabindex="3">Software</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Courses.html" tabindex="4">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html" tabindex="5">Contact Us</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+  </div>
+    </header>
+
+
+  
+<body>
+<!-- The body of the Software page is used to show a table which highlights the differences in the two pieces
+  of Software, those being Pro version and Edu version. There is a table presented on this page which contains
+  checkboxes for each feature the versions are comparing. The body contains 2 buttons, one for each subpage-->
+
+
+<div class="container">
+    <div class="row">
+        <h5>Our Software is designed to enable robust and consistent analysis of trade data and trade policy choices. It is a low cost, easy to use tool and a valuable resource for governments, international organisations, NGOs, private sector businesses, consultancies, banks, trade analysts, researchers… for anyone interested in trade!</h5>
+        <!-- Hyperlink to the TradeSiftFeatures.html file -->
+        <p> See <span><a href="#"> TradeSiftFeatures.html</a></span> file</p>
+    </div>
+    <!-- Row to display the two button links, one for Pro version and one for Edu version, background color is set to orange with a black background 
+      for the purpose of easier viewing -->
+    <div class="row">
+      <h6> Follow our Download Links for your choice of Software!</h6>
+    </div>
+    <div class="row" style="justify-content: center;">
+      <div class="col">
+      <!-- Hyperlink to Pro subpage-->
+      <a href="Pro.html"><button type="submit" class="btn btn-primary" style="background-color: orange; border-color: black;">Pro Page</button></a>
+      </div>
+      <div class="col">
+      <!-- Hyperlink to Edu subpage-->
+        <a href="Edu.html"><button type="submit" class="btn btn-primary" style="background-color: orange; border-color: black">Edu Page</button></a>
+      </div>
+    </div>
+
+    <!-- Table class is created to show the comparisons between the two software versions -->
+    <table class="table table-dark">
+        <!-- thead is used to create Headings within the table, this is used multiple times throughout
+          for the different categories that are compared against each other -->
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Pro</th>
+            <th scope="col">Edu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- In cases where the Software is compatible with the feature, a checkbox is checked and 
+            disabled within the field so the user cannot edit any of our information-->
+          <tr>
+            <td>INBUILT INDICATORS</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>FKI - Finger-Kreinin Index</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>IIT - Intra-Industry Trade</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+            <td>OPN – Openness</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>RCA – Revealed Comparative Advantage</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>TCI – Trade Concentration Index</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+            <!-- When the software is not compatible, the table cell is left blank -->
+            <td>RECPI – Relative Export Comparative Index</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>RMA – Revealed Market Access</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>STRI – Services Trade Restrictiveness Index</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TII – Trade Intensity Index</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <thead>
+            <tr>
+              <th scope="col">DATA analysis  FUNCTIONALITY</th>
+              <th scope="col">Pro</th>
+              <th scope="col">Edu</th>
+            </tr>
+          </thead>
+          <tr>
+
+            <td>GDP</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+            <td>Tariff</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>Trade in Goods</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>Custom Data loading</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Services Trade</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>TiVA</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>WIOD</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <thead>
+            <tr>
+              <th scope="col">DATA SET COMPATABILITY</th>
+              <th scope="col">Pro</th>
+              <th scope="col">Edu</th>
+            </tr>
+          </thead>
+          <tr>
+
+            <td>BEC</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>HS  1,2,3,4,5,Combined</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+            <td>HS 2022</td>
+            <td>Post Jan 2022</td>
+            <td>Post Jan 2022</td>
+          </tr>
+          <tr>
+
+            <td>SIC</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>ISIC</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>SITC 1,2,3,4</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>Nationally available data (formatted)</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td>Services data</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>STRI</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <thead>
+            <tr>
+              <th scope="col">EXPORTING & REPORTING</th>
+              <th scope="col">Pro</th>
+              <th scope="col">Edu</th>
+            </tr>
+          </thead>
+          <tr>
+
+            <td>Analytical tables</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Inbuilt report builder</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>Save & Export charts into report builder and for future reference</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>Save & Export tables into report builder and for future reference</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <thead>
+            <tr>
+              <th scope="col">TECHNICAL SUPPORT</th>
+              <th scope="col">Pro</th>
+              <th scope="col">Edu</th>
+            </tr>
+          </thead>
+          <tr>
+
+            <td>1 year’s Technical Support</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>1 year’s Software Updates</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+
+            <td>Training and demonstration videos</td>
+            <td><input type="checkbox" checked disabled> </td>
+            <td></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+</div>
+
+
+<!-- The footer calls the footer class from the layout.css file. This ensures alll required measurements are adherred to.
+  The footer is broken into 2 different columns. First one being for Copyright and Social Media Links, with the second column
+  containing an easy to use Newsletter sign up for the user -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row" style="width: 100%;">
+      <div class="col-lg-6" style="text-align: left;">
+          <p>Trade Group&copy;  All rights reserved.<p>               
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+      </div>
+      <div class="col-lg-6" style="text-align: right; align-items: end;">
+      <h6> Sign up to our Newsletter below:  </h6>
+      <form class="form-inline" action="/action_page.php" style="margin-left: 100px">
+        <label for="email" >Email address:  </label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

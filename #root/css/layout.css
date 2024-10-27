@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, p  {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+
+/* This CSS is used to format the headers throughout the websites as they are all equal */
+.header-bar{
+
+width: 100%;
+height: 150px;
+background-color: white;
+}
+
+/* This CSS is used to format the navbar throughout the websites as they are all equal */
+.navbar{
+    width: 100%;
+    background-color: orange;
+    color: black;
+    
+}
+
+
+header{
+    margin-bottom: 50px;
+}
+
+/* This CSS is used to center the body sections of the webpages ensuring the content is in the middle */
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%
+
+}
+
+/* This CSS is used to format the footers throughout the websites as they are all to be kept with equal properties */
+footer{
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
